@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router";
 
 
-const ScrollRestore = ({ childre }) => {
+const ScrollRestore = ({ children }) => {
     const location = useLocation();
     useEffect(() => {
         window.scrollTo(0, 0);
