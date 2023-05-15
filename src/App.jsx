@@ -20,12 +20,14 @@ function App() {
     <>
       <BrowserRouter>
         <CargoProvider>
-          <Routes>
-            <Route index element={<CargoOrders />} />
-            <Route path='/cargo-orders' element={<CargoOrders />} />
-            <Route path='/cargo-details' element={<CargoDetails />} />
-            <Route path='*' element={<NoPage />} />
-          </Routes>
+          <ScrollRestore>
+            <Routes>
+              <Route index element={<CargoOrders />} />
+              <Route path='/cargo-orders' element={<CargoOrders />} />
+              <Route path='/cargo-details' element={<CargoDetails />} />
+              <Route path='*' element={<NoPage />} />
+            </Routes>
+          </ScrollRestore>
         </CargoProvider>
       </BrowserRouter>
     </>
