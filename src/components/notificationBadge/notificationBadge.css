@@ -1,0 +1,33 @@
+.my-noti-bdg {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 50px;
+    width: 199px;
+    border-radius: 0 25px 25px 25px;
+    background: linear-gradient(45deg, var(--soft-black) 0%, var(--transparency-gray) 100%);
+}
+
+.my-noti-bdg p {
+    margin: 0;
+}
+
+.my-noti-bdg .time-bdg {
+    color: var(--yellow-btn-color);
+}
+
+.my-noti-bdg.my-noti-bdg-alt {
+    cursor: pointer;
+    background: none;
+    color: black;
+    background-color: var(--yellow-btn-color);
+    box-shadow: inset -2px -2px 4px 0 var(--yellow-btn-shadow), inset 2px 2px 4px 0 var(--yellow-btn-bright);
+}
+
+@media only screen and (max-width: 425px) {
+
+    .my-noti-bdg {
+        font-size: 0.8rem;
+        margin-inline-end: 1rem;
+    }
+}

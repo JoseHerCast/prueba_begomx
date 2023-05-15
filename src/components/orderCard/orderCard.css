@@ -1,0 +1,74 @@
+.my-card-style .card {
+    border: 1px solid var(--smoke-color);
+    border-radius: 1.56rem;
+    background: linear-gradient(45deg, var(--soft-black) 0%, var(--transparency-gray) 100%);
+}
+
+.my-card-style .card-header {
+    border-bottom: 1px solid var(--smoke-color);
+}
+
+.my-card-style .card-header,
+.my-card-style .card-body,
+.my-card-style .card-footer {
+    background-color: transparent;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.address-container p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.track-bar {
+    height: 3rem;
+    width: 2px;
+    border-radius: 50%;
+    background: linear-gradient(white, var(--smoke-color));
+}
+
+.badge-status {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.address-over {
+    font-size: 0.625rem;
+    color: var(--smoke-text-color);
+}
+
+.blue-dot-bg {
+    background-color: var(--in-transit-color);
+}
+
+.grey-dot-bg {
+    background-color: var(--assigned-color);
+}
+
+@media only screen and (max-width: 375px) {
+    .card-header img {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .my-card-style .card-body img {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .my-card-style .card-body img {
+        width: 100%;
+    }
+}

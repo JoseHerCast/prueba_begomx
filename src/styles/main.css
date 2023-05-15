@@ -1,0 +1,40 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    --stepper-circle-size: clamp(1.5rem, 5vw, 3rem);
+    --stepper-spacing: clamp(0.25rem, 2vw, 0.5rem);
+    --main-background-color: #0D0F12;
+    --main-font-color: #FFFFFF;
+    --smoke-color: #2C2C2C;
+    --smoke-text-color: #7B7B7B;
+    --soft-black: #080C0F;
+    --badge-bg: #171A1D;
+    --transparency-gray: rgba(38, 38, 38, 0.64);
+    --in-transit-color: #0394FF;
+    --assigned-color: #989898;
+    --yellow-btn-color: #FFFF00;
+    --yellow-btn-shadow: #C2C200;
+    --yellow-btn-bright: #FFFF80;
+    --olive-btn-color: #979700;
+    --rec-border-color: #1E2227;
+    --rec-background-color: #0F1216;
+    --rec-background-color-alt: #11161B;
+    --image-container-border: #1B1F22;
+    --image-container-background: #181D22;
+    --image-container-border-alt: #1F2224;
+    --image-container-background-alt: #151A1E;
+    --image-container-box-shadow: #000000;
+    --dark-black: #131618;
+    --hover-black: #0F151A;
+    --hover-dark: #1B2227;
+    --active-black: #0C1013;
+    --active-dark: #111517;
+    --row-hover-color: #f5f5f512;
+}
+
+body {
+    background-color: var(--soft-black);
+    color: var(--main-font-color);
+}

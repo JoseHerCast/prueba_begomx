@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D89DBBCC-6F92-4E45-B747-539E29002B29</title>
+    <defs>
+        <filter x="-96.4%" y="-103.8%" width="292.9%" height="307.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Manager" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="My-fleet-projects-" transform="translate(-298.000000, -412.000000)" fill="#C1C7D0" fill-rule="nonzero">
+            <g id="Statics" transform="translate(29.000000, 417.000000)">
+                <g id="Group-3" transform="translate(267.000000, 0.000000)">
+                    <g id="Group-2" filter="url(#filter-1)" transform="translate(12.000000, 5.000000)">
+                        <path d="M12.6757812,7.36363636 L12.6757812,10.8560987 C12.6757812,11.1331841 12.434834,11.3586112 12.1386719,11.3586112 L1.61132812,11.3586112 C1.31516602,11.3586112 1.07421875,11.1331841 1.07421875,10.8560987 L1.07421875,7.36363636 L-8.8817842e-16,7.36363636 L-8.8817842e-16,10.8560987 C-8.8817842e-16,11.687355 0.722841797,12.3636364 1.61132812,12.3636364 L12.1386719,12.3636364 C13.0271582,12.3636364 13.75,11.687355 13.75,10.8560987 L13.75,7.36363636 L12.6757812,7.36363636 Z" id="Path"></path>
+                        <polygon id="Path" points="9.19560537 5.99344797 7.30898047 7.92586684 7.30898047 2.57571742e-14 6.31601999 2.57571742e-14 6.31601999 7.92586684 4.42939508 5.99344797 3.72727273 6.71261291 6.81250023 9.872728 9.89772773 6.71261291"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

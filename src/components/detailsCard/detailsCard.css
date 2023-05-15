@@ -1,0 +1,76 @@
+.my-card-style-alt .card {
+    border: 1px solid var(--smoke-color);
+    border-right: none;
+    border-radius: 1.56rem 0 0 1.56rem;
+    background: linear-gradient(45deg, var(--soft-black) 0%, var(--transparency-gray) 100%);
+}
+
+.my-card-style-alt .card-header {
+    border-bottom: none;
+}
+
+.my-card-style-alt .card-header p {
+    margin: 0;
+}
+
+.my-card-style-alt .card-header #text-header-title {
+    font-size: 1.125rem;
+}
+
+.my-card-style-alt .card-header #text-header-over {
+    font-size: 0.875rem;
+}
+
+.border-bottom-div {
+    border-bottom: 1px solid var(--smoke-color);
+}
+
+.badge-status-alt {
+    height: 20px;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    background-color: var(--badge-bg);
+}
+
+.rec-shape-ext {
+    height: 40px;
+    width: 40px;
+    background-color: var(--rec-background-color-alt);
+    box-shadow: 0 2px 4px 0 black;
+}
+
+.rec-shape-int {
+    box-sizing: border-box;
+    height: 28.82px;
+    width: 28.82px;
+    border: 2px solid var(--rec-border-color);
+    background-color: var(--rec-background-color);
+    box-shadow: inset 2px 0 3px 0 var(--soft-black);
+}
+
+.oval-shape-int {
+    height: 32px;
+    width: 32px;
+    background-color: var(--yellow-btn-color);
+    box-shadow: inset 1px 1px 3px 0 var(--olive-btn-color);
+}
+
+.oval-shape-ext {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--yellow-btn-color);
+}
+
+.clickable-row {
+    cursor: pointer;
+}
+
+.clickable-row:hover {
+    background-color: var(--row-hover-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Difumina los bordes */
+    border-radius: 5px;
+    /* Redondea los bordes */
+}

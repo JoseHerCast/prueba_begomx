@@ -1,0 +1,23 @@
+.my-input-group .form-floating>label {
+    color: var(--smoke-text-color);
+}
+
+.my-input-group {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--smoke-color);
+}
+
+
+.my-input-group .form-control {
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+
+.my-input-group .form-control,
+.my-input-group .form-control:focus {
+    background-color: transparent;
+    box-shadow: none;
+}

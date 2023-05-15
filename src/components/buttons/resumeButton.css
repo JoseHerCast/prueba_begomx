@@ -1,0 +1,28 @@
+.yellow-btn {
+    height: 43.87px;
+    width: 130px;
+    border: none;
+    border-radius: 21.93px;
+    background-color: var(--yellow-btn-color);
+    box-shadow: inset -2px -2px 4px 0 var(--yellow-btn-shadow), inset 2px 2px 4px 0 var(--yellow-btn-bright);
+}
+
+.yellow-btn:hover {
+    background-color: #e9d60b;
+}
+
+.yellow-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.5);
+}
+
+.yellow-btn:active {
+    background-color: #FFD600;
+    box-shadow: inset -1px -1px 2px 0 rgba(0, 0, 0, 0.2), inset 1px 1px 2px 0 rgba(255, 255, 255, 0.7);
+}
+
+.yellow-btn:disabled {
+    background-color: #E0E0E0;
+    cursor: not-allowed;
+    box-shadow: none;
+}

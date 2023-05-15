@@ -1,0 +1,47 @@
+.my-accordion .accordion-item {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.my-accordion .accordion-button.collapsed {
+    background: linear-gradient(45deg, var(--soft-black) 0%, var(--dark-black) 100%);
+    color: white;
+    border: none;
+    border: 1px solid var(--smoke-color)
+}
+
+.my-accordion .accordion-button:not(.collapsed) {
+    background: linear-gradient(45deg, var(--dark-black) 0%, var(--soft-black) 100%);
+    color: white;
+    border: none;
+    box-shadow: none;
+    border: 1px solid var(--smoke-color)
+}
+
+.my-accordion .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+    fill: black;
+    filter: invert(93%) sepia(100%) saturate(5622%) hue-rotate(357deg) brightness(102%) contrast(101%);
+}
+
+
+.my-accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.my-accordion .accordion-button:not(.collapsed):hover {
+    background: linear-gradient(45deg, var(--dark-black) 0%, var(--soft-black) 100%);
+    color: white;
+}
+
+.my-accordion .accordion-button:not(.collapsed):active {
+    background: linear-gradient(45deg, var(--darker-black) 0%, var(--soft-black) 100%);
+    color: white;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: white;
+}
