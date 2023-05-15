@@ -15,7 +15,7 @@ const NotificationBadge = ({ startTime }) => {
         function. */
         const interval = setInterval(() => {
             const remainingTime = startTime - Date.now();
-            console.log(startTime)
+            //console.log(startTime)
             setTimeRemaining(remainingTime);
             if (remainingTime <= 0) {
                 clearInterval(interval);
