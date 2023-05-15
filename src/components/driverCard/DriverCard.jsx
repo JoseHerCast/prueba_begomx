@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Image } from 'react-bootstrap'
 
+/* This is a functional component called `DriverCard` that takes in several props (`driverImg`, `time`,
+`checkIcon`, `steps`, and `handleClick`) and returns a JSX element. */
 const DriverCard = ({ driverImg, time, checkIcon, steps, handleClick }) => {
     const [disableButton, setDisableButton] = useState(true);
     useEffect(() => {
+        /* This code is checking if the `steps` prop exists and if the fourth step (index 3) is active.
+        If both conditions are true, it sets the `disableButton` state to `false`, which enables the
+        "Track Order" button. */
         if (steps) {
             steps[3].active && setDisableButton(false)
         }

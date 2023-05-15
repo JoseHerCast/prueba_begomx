@@ -95,6 +95,11 @@ const pickup = [
     }
 ] */
 
+/**
+ * This is a React component that displays cargo details, including pickup data and a driver card, and
+ * allows the user to track the order and navigate back to the cargo orders page.
+ * @returns The Details component is being returned.
+ */
 export function Details() {
     const [indexPickupData, setIndexPickupData] = useState(0)
     const cargoContext = useCargoContext();
@@ -104,19 +109,31 @@ export function Details() {
     const destinations = cargoDetails?.destinations;
     const pickup = cargoDetails?.status_list?.pickup;
 
+    /**
+     * This function sets the index of pickup data and scrolls to the corresponding element.
+     */
     const handlePickupDataChange = (index) => {
         setIndexPickupData(index);
         scrollToElement()
     }
 
+    /**
+     * The function logs "Track Order" to the console when called.
+     */
     const handleTrackOrderClick = () => {
         console.log("Track Order");
     }
 
+    /**
+     * The function `handleGoBack` navigates the user to the `/cargo-orders` page.
+     */
     const handleGoBack = () => {
         navigate('/cargo-orders')
     }
 
+    /**
+     * This function scrolls smoothly to a specified element in a React component.
+     */
     const scrollToElement = () => {
         referenceDrop.current.scrollIntoView({ behavior: 'smooth' });
     };

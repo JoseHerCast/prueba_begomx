@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useCargoToggleContext } from '../../providers/CargoProvider'
 import { useNavigate } from 'react-router-dom';
 import { Card, Image, Col, Row } from 'react-bootstrap'
@@ -9,7 +9,6 @@ import Location from '../../assets/images/inspect/App BeGo/Contenedores/Cargo Or
 import Eye from '../../assets/images/inspect/App BeGo/Contenedores/Cargo Orders/Group 4-1/eye.svg'
 import ResumeButton from '../buttons/ResumeButton'
 import NotificationBadge from '../notificationBadge/NotificationBadge'
-import { useEffect } from 'react'
 
 /* const statusArray = [
     { id: 0, label: "dummy", class: "dummy" },
@@ -18,6 +17,9 @@ import { useEffect } from 'react'
     { id: 3, label: "Assigned", class: "grey-dot-bg" }
 ] */
 
+/* The above code defines a React functional component called `OrderCard`. It takes in several props
+including `orderNo`, `type`, `statusClass`, `statusString`, `destinations`, `startTimeMili`,
+`endTimeMili`, `ordersData`, and `index`. */
 const OrderCard = ({ orderNo, type, statusClass, statusString, destinations, startTimeMili, endTimeMili, ordersData, index }) => {
     /* const statusObj = statusArray.find(s => s.id === status);
     const badgeLabel = statusObj.label;
@@ -49,9 +51,18 @@ const OrderCard = ({ orderNo, type, statusClass, statusString, destinations, sta
 
 
     useEffect(() => {
+        /* `startTimeMili && setStartTime(startTimeMili)` is a conditional statement that checks if
+        `startTimeMili` is truthy (not null, undefined, 0, false, or an empty string). If
+        `startTimeMili` is truthy, it sets the state of `startTime` to `startTimeMili` using the
+        `setStartTime` function. If `startTimeMili` is falsy, the statement does nothing. This is a
+        way to conditionally update the state of `startTime` based on the value of `startTimeMili`. */
         startTimeMili && setStartTime(startTimeMili)
     }, [startTimeMili])
 
+    /**
+     * The handleClick function changes the cargo context with updated orders data and navigates to the
+     * cargo details page.
+     */
     const handleClick = () => {
         changeCargoContext({ ...ordersData, cargoIndexSelected: index });
         navigate('/cargo-details')

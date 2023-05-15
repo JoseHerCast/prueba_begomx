@@ -1,6 +1,14 @@
 import React from 'react'
-import { Accordion, Row } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap'
 
+/**
+ * The DetailsExpandable function returns an accordion component that displays pickup or dropoff data,
+ * including address, date, and contact information.
+ * @returns A React component called DetailsExpandable is being returned. It takes two props, index and
+ * pickupData, and renders an Accordion component with an Accordion.Item that displays pickup or
+ * dropoff data based on the value of index. The data includes the address, date, contact telephone,
+ * and contact email.
+ */
 const DetailsExpandable = ({ index, pickupData }) => {
     const address = pickupData[index].address;
     const date = new Date(pickupData[index].startDate)

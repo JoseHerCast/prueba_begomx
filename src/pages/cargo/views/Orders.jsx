@@ -26,6 +26,8 @@ const urlUpcoming = 'https://129bc152-6319-4e38-b755-534a4ee46195.mock.pstmn.io/
 const urlOrders = 'https://129bc152-6319-4e38-b755-534a4ee46195.mock.pstmn.io/orders'
 
 
+/* This is a React functional component called `Orders`. It is exporting the component so that it can
+be imported and used in other parts of the application. */
 export function Orders() {
     const { data: upcomingData, upcomingLoading, upcomingError } = useFetch(urlUpcoming);
     //Los detalles se cargan al cargar todas las ordenes, para evitar un fetch cada que se va a detalles
@@ -36,6 +38,12 @@ export function Orders() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        /* This code block is filtering the orders based on the search input value (stored in the
+        `filter` state) and setting the filtered orders to the `orders` state. It first checks if
+        `upcomingData` exists and if its `status` property is equal to 200 (which means the data was
+        fetched successfully). Then it filters the `result` array of `upcomingData` based on whether
+        the `order_number` property of each order includes the `filter` value. Finally, it sets the
+        filtered orders to the `orders` state using the `setOrders` function. */
         if (upcomingData && upcomingData.status === 200) {
             const filteredOrders = upcomingData.result.filter((order) =>
                 order.order_number.includes(filter)
@@ -45,6 +53,12 @@ export function Orders() {
     }, [upcomingData, filter]);
 
     useEffect(() => {
+        /* `setOrdersDetails(ordersData)` is setting the state of `ordersDetails` to the value of
+        `ordersData`. This is done in the `useEffect` hook that runs whenever `ordersData` changes.
+        It is used to store the details of all orders, which are fetched from the `urlOrders`
+        endpoint using the `useFetch` hook. The `ordersDetails` state is then passed as a prop to
+        the `OrderCard` component, which uses it to display additional information about the order
+        when the user clicks on it. */
         setOrdersDetails(ordersData);
     }, [ordersData])
 
@@ -56,6 +70,9 @@ export function Orders() {
         console.log('upcomingError:', upcomingError);
     }
 
+    /**
+     * This function navigates the user back to the previous page.
+     */
     const handleGoBack = () => {
         navigate('/')
     }

@@ -10,6 +10,14 @@ const statusArray = [
 
 ]
 
+/**
+ * This is a React component that renders a card with details about an order's pickup and dropoff
+ * locations, including their addresses and statuses.
+ * @returns A React component called DetailsCard is being returned. It takes in props such as orderNo,
+ * reference, destinations, and handleChangeData, and renders a Card component with information about
+ * the order's pickup and dropoff locations. The pickup and dropoff locations are displayed as
+ * clickable rows with their respective addresses and status badges.
+ */
 const DetailsCard = ({ orderNo, reference, destinations, handleChangeData }) => {
     const origin = destinations[0];
     const target = destinations[1];

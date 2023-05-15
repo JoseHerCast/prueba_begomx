@@ -2,6 +2,12 @@ import React from 'react'
 import { Container, Nav } from 'react-bootstrap';
 
 
+/**
+ * The NoPage function returns a React component that displays a 404 error message with a link to the
+ * homepage.
+ * @returns A functional component called `NoPage` is being returned. It renders a container with an
+ * error message and a link to go back to the home page.
+ */
 const NoPage = () => {
     return (
         <>
